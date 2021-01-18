@@ -1,0 +1,13 @@
+C:\Users\Ivan\source\repos\Adapter2\Adapter2\bin\Debug\netcoreapp3.1\Adapter2.exe
+C:\Users\Ivan\source\repos\Adapter2\Adapter2\bin\Debug\netcoreapp3.1\Adapter2.deps.json
+C:\Users\Ivan\source\repos\Adapter2\Adapter2\bin\Debug\netcoreapp3.1\Adapter2.runtimeconfig.json
+C:\Users\Ivan\source\repos\Adapter2\Adapter2\bin\Debug\netcoreapp3.1\Adapter2.runtimeconfig.dev.json
+C:\Users\Ivan\source\repos\Adapter2\Adapter2\bin\Debug\netcoreapp3.1\Adapter2.dll
+C:\Users\Ivan\source\repos\Adapter2\Adapter2\bin\Debug\netcoreapp3.1\Adapter2.pdb
+C:\Users\Ivan\source\repos\Adapter2\Adapter2\obj\Debug\netcoreapp3.1\Adapter2.csprojAssemblyReference.cache
+C:\Users\Ivan\source\repos\Adapter2\Adapter2\obj\Debug\netcoreapp3.1\Adapter2.AssemblyInfoInputs.cache
+C:\Users\Ivan\source\repos\Adapter2\Adapter2\obj\Debug\netcoreapp3.1\Adapter2.AssemblyInfo.cs
+C:\Users\Ivan\source\repos\Adapter2\Adapter2\obj\Debug\netcoreapp3.1\Adapter2.csproj.CoreCompileInputs.cache
+C:\Users\Ivan\source\repos\Adapter2\Adapter2\obj\Debug\netcoreapp3.1\Adapter2.dll
+C:\Users\Ivan\source\repos\Adapter2\Adapter2\obj\Debug\netcoreapp3.1\Adapter2.pdb
+C:\Users\Ivan\source\repos\Adapter2\Adapter2\obj\Debug\netcoreapp3.1\Adapter2.genruntimeconfig.cache
