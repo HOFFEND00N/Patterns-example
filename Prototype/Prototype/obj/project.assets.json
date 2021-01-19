@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ivan\\source\\repos\\Patterns\\Composite\\Composite\\Composite.csproj",
-      "projectName": "Composite",
-      "projectPath": "C:\\Users\\Ivan\\source\\repos\\Patterns\\Composite\\Composite\\Composite.csproj",
+      "projectUniqueName": "C:\\Users\\Ivan\\source\\repos\\Patterns\\Prototype\\Prototype\\Prototype.csproj",
+      "projectName": "Prototype",
+      "projectPath": "C:\\Users\\Ivan\\source\\repos\\Patterns\\Prototype\\Prototype\\Prototype.csproj",
       "packagesPath": "C:\\Users\\Ivan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ivan\\source\\repos\\Patterns\\Composite\\Composite\\obj\\",
+      "outputPath": "C:\\Users\\Ivan\\source\\repos\\Patterns\\Prototype\\Prototype\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
