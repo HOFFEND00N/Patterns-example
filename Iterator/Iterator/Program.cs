@@ -6,6 +6,8 @@ namespace Iterator
 {
     class Program
     {
+        // move logic to MoveNext()
+        // Current() in Iterator returns Tuple, instead of expected object(Official)
         static void Main(string[] args)
         {
             var goverment = new OfficialBranch();

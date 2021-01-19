@@ -101,8 +101,6 @@ namespace Builder2
                 Text = text;
                 return this;
             }
-
-
         }
 
         static class ArticleValidator
