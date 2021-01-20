@@ -67,14 +67,9 @@ namespace Prototype
                 officials = new List<IOfficial>();
             }
 
-            //Constructor cloninig smth, but client does not know about it
             public OfficialBranch(List<IOfficial> officials)
             {
-                this.officials = new List<IOfficial>();
-                foreach (var i in officials)
-                {
-                    this.officials.Add((IOfficial)i.Clone());
-                }
+                this.officials = officials;
             }
 
             public void AddOfficial(IOfficial official)
@@ -102,7 +97,12 @@ namespace Prototype
 
             public object Clone()
             {
-                return new OfficialBranch(officials);
+                var clonedOfficials = new List<IOfficial>();
+                foreach (var i in officials)
+                {
+                    clonedOfficials.Add((IOfficial)i.Clone());
+                }
+                return new OfficialBranch(clonedOfficials);
             }
         }
 
