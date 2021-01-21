@@ -27,7 +27,7 @@ namespace Iterator
             Console.WriteLine(goverment.Steal());
             dm.GetOfficialChildren();
 
-            goverment.UseIterator(IteratorType.InWide);
+            goverment.UseIterator(IteratorType.InDepth);
             foreach (var i in goverment)
                 Console.WriteLine(i);
         }
@@ -198,9 +198,7 @@ namespace Iterator
                     node = null;
                 currentOfficial = node;
                 if (!visited.Contains(node) && node != null)
-                {
                     visited.Add(node);
-                }
                 if (node is OfficialBranch)
                 {
                     var children = (node as OfficialBranch).GetOfficialChildren();

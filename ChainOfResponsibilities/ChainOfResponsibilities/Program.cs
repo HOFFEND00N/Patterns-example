@@ -36,36 +36,27 @@ namespace ChainOfResponsibilities
         {
             private Official official;
             private IBudgetApprover nextApprover;
+
             public BudgetApprover(Official official)
             {
                 this.official = official;
-                nextApprover = new EndOfApprovalChain();
+                nextApprover = null;
             }
 
             public ApprovalResponse Approve(int value)
             {
                 var response = official.ApproveBudget(value);
                 if (response == ApprovalResponse.BeyondApprovalLimit)
-                    return nextApprover.Approve(value);
+                    if (nextApprover == null)
+                        return ApprovalResponse.Denied;
+                    else
+                        return nextApprover.Approve(value);
                 return response;
             }
 
             public void RegisterNext(IBudgetApprover nextApprover)
             {
                 this.nextApprover = nextApprover;
-            }
-        }
-
-        class EndOfApprovalChain : IBudgetApprover
-        {
-            public ApprovalResponse Approve(int value)
-            {
-                return ApprovalResponse.Denied;
-            }
-
-            public void RegisterNext(IBudgetApprover validator)
-            {
-                throw new InvalidOperationException();
             }
         }
 
