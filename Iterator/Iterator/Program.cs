@@ -27,7 +27,7 @@ namespace Iterator
             Console.WriteLine(goverment.Steal());
             dm.GetOfficialChildren();
 
-            goverment.UseIterator(IteratorType.InWide);
+            goverment.UseIterator(IteratorType.InDepth);
             foreach (var i in goverment)
                 Console.WriteLine(i);
         }
@@ -35,10 +35,25 @@ namespace Iterator
         interface IOfficial
         {
             public double Steal();
+            public IOfficial Parent { get; set; }
         }
 
         class Minister : IOfficial
         {
+            private IOfficial parent;
+
+            public IOfficial Parent
+            {
+                get
+                {
+                    return parent;
+                }
+                set
+                {
+                    parent = value;
+                }
+            }
+
             public double Steal()
             {
                 return 10;
@@ -47,6 +62,20 @@ namespace Iterator
 
         class DeputyMinister : IOfficial
         {
+            private IOfficial parent;
+
+            public IOfficial Parent
+            {
+                get
+                {
+                    return parent;
+                }
+                set
+                {
+                    parent = value;
+                }
+            }
+
             public double Steal()
             {
                 return 5;
@@ -55,6 +84,20 @@ namespace Iterator
 
         class DefaultOfficial : IOfficial
         {
+            private IOfficial parent;
+
+            public IOfficial Parent
+            {
+                get
+                {
+                    return parent;
+                }
+                set
+                {
+                    parent = value;
+                }
+            }
+
             public double Steal()
             {
                 return 1;
@@ -65,15 +108,30 @@ namespace Iterator
         {
             private List<IOfficial> officials;
             private IEnumerator enumerator;
+            private IOfficial parent;
+
+            public IOfficial Parent
+            {
+                get
+                {
+                    return parent;
+                }
+                set
+                {
+                    parent = value;
+                }
+            }
 
             public OfficialBranch()
             {
                 officials = new List<IOfficial>();
+                Parent = null;
             }
 
             public void AddOfficial(IOfficial official)
             {
                 officials.Add(official);
+                official.Parent = this;
             }
 
             public List<IOfficial> GetOfficialChildren()
@@ -123,118 +181,92 @@ namespace Iterator
 
         class InWideIterator : IEnumerator
         {
-            List<Tuple<int, IOfficial>> officials = new List<Tuple<int, IOfficial>>();
-            int position = -1;
+            IOfficial currentOfficial;
+            Queue<IOfficial> officials = new Queue<IOfficial>();
 
             public InWideIterator(IOfficial official)
             {
-                officials.Add(new Tuple<int, IOfficial>(1, official));
-                ConvertTreeToList(official);
-            }
-
-            private void ConvertTreeToList(IOfficial official)
-            {
-                if (official is OfficialBranch)
-                {
-                    var tmpOfficial = official as OfficialBranch;
-                    var children = tmpOfficial.GetOfficialChildren();
-                    foreach (var i in children)
-                        officials.Add(new Tuple<int, IOfficial>(0, i));
-                }
-                else
-                    officials.Add(new Tuple<int, IOfficial>(0, official));
-
-                for (int i = 0; i < officials.Count; i++)
-                {
-                    if (officials[i].Item1 == 0 && officials[i].Item2 is OfficialBranch)
-                    {
-                        officials[i] = new Tuple<int, IOfficial>(1, officials[i].Item2);
-                        ConvertTreeToList(officials[i].Item2);
-                    }
-                }
+                officials.Enqueue(official);
             }
 
             public object Current
             {
                 get
                 {
-                    if (position == -1 || position >= officials.Count)
+                    if (currentOfficial == null)
                         throw new InvalidOperationException();
                     else
-                        return officials[position];
+                        return currentOfficial;
                 }
             }
 
             public bool MoveNext()
             {
-                if (position < officials.Count - 1)
-                {
-                    position++;
-                    return true;
-                }
+                if (officials.Count != 0)
+                    currentOfficial = officials.Dequeue();
                 else
-                    return false;
+                    currentOfficial = null;
+                if (currentOfficial is OfficialBranch)
+                    foreach (var i in (currentOfficial as OfficialBranch).GetOfficialChildren())
+                    {
+                        officials.Enqueue(i);
+                    }
+                return currentOfficial == null ? false : true;
             }
 
             public void Reset()
             {
-                position = -1;
+                officials = new Queue<IOfficial>();
             }
         }
 
         class InDepthIterator : IEnumerator
         {
-            List<Tuple<int, IOfficial>> officials = new List<Tuple<int, IOfficial>>();
-            int position = -1;
+            IOfficial currentOfficial;
+            Stack<IOfficial> officials = new Stack<IOfficial>();
+            HashSet<IOfficial> visited = new HashSet<IOfficial>();
 
             public InDepthIterator(IOfficial official)
             {
-                officials.Add(new Tuple<int, IOfficial>(1, official));
-                ConvertTreeToList(official);
-            }
-
-            private void ConvertTreeToList(IOfficial official)
-            {
-                if (official is OfficialBranch)
-                {
-                    var tmpOfficial = official as OfficialBranch;
-                    var children = tmpOfficial.GetOfficialChildren();
-                    foreach (var i in children)
-                    {
-                        officials.Add(new Tuple<int, IOfficial>(1, i));
-                        if (i is OfficialBranch)
-                            ConvertTreeToList(i);
-                    }
-                }
-                else
-                    officials.Add(new Tuple<int, IOfficial>(0, official));
+                officials.Push(official);
             }
 
             public object Current
             {
                 get
                 {
-                    if (position == -1 || position >= officials.Count)
+                    if (currentOfficial == null)
                         throw new InvalidOperationException();
                     else
-                        return officials[position];
+                        return currentOfficial;
                 }
             }
 
             public bool MoveNext()
             {
-                if (position < officials.Count - 1)
-                {
-                    position++;
-                    return true;
-                }
+                IOfficial node;
+                if (officials.Count != 0)
+                    node = officials.Pop();
                 else
-                    return false;
+                    node = null;
+                currentOfficial = node;
+                if (!visited.Contains(node) && node != null)
+                {
+                    visited.Add(node);
+                }
+                if (node is OfficialBranch)
+                {
+                    var children = (node as OfficialBranch).GetOfficialChildren();
+                    for (int i = children.Count - 1; i >= 0; i--)
+                        officials.Push(children[i]);
+                }
+                return currentOfficial == null ? false : true;
             }
 
             public void Reset()
             {
-                position = -1;
+                officials = new Stack<IOfficial>();
+                visited = new HashSet<IOfficial>();
             }
         }
     }
