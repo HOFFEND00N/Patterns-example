@@ -1,0 +1,13 @@
+C:\Users\Ivan\source\repos\Patterns\ChainOfResponsibilities\ChainOfResponsibilities\bin\Debug\netcoreapp3.1\ChainOfResponsibilities.exe
+C:\Users\Ivan\source\repos\Patterns\ChainOfResponsibilities\ChainOfResponsibilities\bin\Debug\netcoreapp3.1\ChainOfResponsibilities.deps.json
+C:\Users\Ivan\source\repos\Patterns\ChainOfResponsibilities\ChainOfResponsibilities\bin\Debug\netcoreapp3.1\ChainOfResponsibilities.runtimeconfig.json
+C:\Users\Ivan\source\repos\Patterns\ChainOfResponsibilities\ChainOfResponsibilities\bin\Debug\netcoreapp3.1\ChainOfResponsibilities.runtimeconfig.dev.json
+C:\Users\Ivan\source\repos\Patterns\ChainOfResponsibilities\ChainOfResponsibilities\bin\Debug\netcoreapp3.1\ChainOfResponsibilities.dll
+C:\Users\Ivan\source\repos\Patterns\ChainOfResponsibilities\ChainOfResponsibilities\bin\Debug\netcoreapp3.1\ChainOfResponsibilities.pdb
+C:\Users\Ivan\source\repos\Patterns\ChainOfResponsibilities\ChainOfResponsibilities\obj\Debug\netcoreapp3.1\ChainOfResponsibilities.csprojAssemblyReference.cache
+C:\Users\Ivan\source\repos\Patterns\ChainOfResponsibilities\ChainOfResponsibilities\obj\Debug\netcoreapp3.1\ChainOfResponsibilities.AssemblyInfoInputs.cache
+C:\Users\Ivan\source\repos\Patterns\ChainOfResponsibilities\ChainOfResponsibilities\obj\Debug\netcoreapp3.1\ChainOfResponsibilities.AssemblyInfo.cs
+C:\Users\Ivan\source\repos\Patterns\ChainOfResponsibilities\ChainOfResponsibilities\obj\Debug\netcoreapp3.1\ChainOfResponsibilities.csproj.CoreCompileInputs.cache
+C:\Users\Ivan\source\repos\Patterns\ChainOfResponsibilities\ChainOfResponsibilities\obj\Debug\netcoreapp3.1\ChainOfResponsibilities.dll
+C:\Users\Ivan\source\repos\Patterns\ChainOfResponsibilities\ChainOfResponsibilities\obj\Debug\netcoreapp3.1\ChainOfResponsibilities.pdb
+C:\Users\Ivan\source\repos\Patterns\ChainOfResponsibilities\ChainOfResponsibilities\obj\Debug\netcoreapp3.1\ChainOfResponsibilities.genruntimeconfig.cache
