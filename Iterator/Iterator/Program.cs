@@ -27,7 +27,7 @@ namespace Iterator
             Console.WriteLine(goverment.Steal());
             dm.GetOfficialChildren();
 
-            goverment.UseIterator(IteratorType.InDepth);
+            goverment.UseIterator(IteratorType.InWide);
             foreach (var i in goverment)
                 Console.WriteLine(i);
         }
@@ -35,24 +35,11 @@ namespace Iterator
         interface IOfficial
         {
             public double Steal();
-            public IOfficial Parent { get; set; }
         }
 
         class Minister : IOfficial
         {
-            private IOfficial parent;
-
-            public IOfficial Parent
-            {
-                get
-                {
-                    return parent;
-                }
-                set
-                {
-                    parent = value;
-                }
-            }
+          
 
             public double Steal()
             {
@@ -62,19 +49,6 @@ namespace Iterator
 
         class DeputyMinister : IOfficial
         {
-            private IOfficial parent;
-
-            public IOfficial Parent
-            {
-                get
-                {
-                    return parent;
-                }
-                set
-                {
-                    parent = value;
-                }
-            }
 
             public double Steal()
             {
@@ -84,20 +58,7 @@ namespace Iterator
 
         class DefaultOfficial : IOfficial
         {
-            private IOfficial parent;
-
-            public IOfficial Parent
-            {
-                get
-                {
-                    return parent;
-                }
-                set
-                {
-                    parent = value;
-                }
-            }
-
+            
             public double Steal()
             {
                 return 1;
@@ -108,30 +69,16 @@ namespace Iterator
         {
             private List<IOfficial> officials;
             private IEnumerator enumerator;
-            private IOfficial parent;
-
-            public IOfficial Parent
-            {
-                get
-                {
-                    return parent;
-                }
-                set
-                {
-                    parent = value;
-                }
-            }
+           
 
             public OfficialBranch()
             {
                 officials = new List<IOfficial>();
-                Parent = null;
             }
 
             public void AddOfficial(IOfficial official)
             {
                 officials.Add(official);
-                official.Parent = this;
             }
 
             public List<IOfficial> GetOfficialChildren()
