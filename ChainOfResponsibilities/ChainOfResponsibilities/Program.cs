@@ -4,6 +4,7 @@ namespace ChainOfResponsibilities
 {
     class Program
     {
+        //what problem solves
         static void Main(string[] args)
         {
             BudgetApprover approver1 = new BudgetApprover(new Official("Minister", 1_000_000));
