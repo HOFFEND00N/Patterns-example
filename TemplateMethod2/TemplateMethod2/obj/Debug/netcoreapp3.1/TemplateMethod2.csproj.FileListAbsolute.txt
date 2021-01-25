@@ -1,0 +1,13 @@
+C:\Users\Ivan\source\repos\Patterns\TemplateMethod2\TemplateMethod2\bin\Debug\netcoreapp3.1\TemplateMethod2.exe
+C:\Users\Ivan\source\repos\Patterns\TemplateMethod2\TemplateMethod2\bin\Debug\netcoreapp3.1\TemplateMethod2.deps.json
+C:\Users\Ivan\source\repos\Patterns\TemplateMethod2\TemplateMethod2\bin\Debug\netcoreapp3.1\TemplateMethod2.runtimeconfig.json
+C:\Users\Ivan\source\repos\Patterns\TemplateMethod2\TemplateMethod2\bin\Debug\netcoreapp3.1\TemplateMethod2.runtimeconfig.dev.json
+C:\Users\Ivan\source\repos\Patterns\TemplateMethod2\TemplateMethod2\bin\Debug\netcoreapp3.1\TemplateMethod2.dll
+C:\Users\Ivan\source\repos\Patterns\TemplateMethod2\TemplateMethod2\bin\Debug\netcoreapp3.1\TemplateMethod2.pdb
+C:\Users\Ivan\source\repos\Patterns\TemplateMethod2\TemplateMethod2\obj\Debug\netcoreapp3.1\TemplateMethod2.csprojAssemblyReference.cache
+C:\Users\Ivan\source\repos\Patterns\TemplateMethod2\TemplateMethod2\obj\Debug\netcoreapp3.1\TemplateMethod2.AssemblyInfoInputs.cache
+C:\Users\Ivan\source\repos\Patterns\TemplateMethod2\TemplateMethod2\obj\Debug\netcoreapp3.1\TemplateMethod2.AssemblyInfo.cs
+C:\Users\Ivan\source\repos\Patterns\TemplateMethod2\TemplateMethod2\obj\Debug\netcoreapp3.1\TemplateMethod2.csproj.CoreCompileInputs.cache
+C:\Users\Ivan\source\repos\Patterns\TemplateMethod2\TemplateMethod2\obj\Debug\netcoreapp3.1\TemplateMethod2.dll
+C:\Users\Ivan\source\repos\Patterns\TemplateMethod2\TemplateMethod2\obj\Debug\netcoreapp3.1\TemplateMethod2.pdb
+C:\Users\Ivan\source\repos\Patterns\TemplateMethod2\TemplateMethod2\obj\Debug\netcoreapp3.1\TemplateMethod2.genruntimeconfig.cache
