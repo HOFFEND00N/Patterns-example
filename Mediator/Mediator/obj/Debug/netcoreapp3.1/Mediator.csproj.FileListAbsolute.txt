@@ -1,0 +1,13 @@
+C:\Users\Ivan\source\repos\Patterns\Mediator\Mediator\bin\Debug\netcoreapp3.1\Mediator.exe
+C:\Users\Ivan\source\repos\Patterns\Mediator\Mediator\bin\Debug\netcoreapp3.1\Mediator.deps.json
+C:\Users\Ivan\source\repos\Patterns\Mediator\Mediator\bin\Debug\netcoreapp3.1\Mediator.runtimeconfig.json
+C:\Users\Ivan\source\repos\Patterns\Mediator\Mediator\bin\Debug\netcoreapp3.1\Mediator.runtimeconfig.dev.json
+C:\Users\Ivan\source\repos\Patterns\Mediator\Mediator\bin\Debug\netcoreapp3.1\Mediator.dll
+C:\Users\Ivan\source\repos\Patterns\Mediator\Mediator\bin\Debug\netcoreapp3.1\Mediator.pdb
+C:\Users\Ivan\source\repos\Patterns\Mediator\Mediator\obj\Debug\netcoreapp3.1\Mediator.csprojAssemblyReference.cache
+C:\Users\Ivan\source\repos\Patterns\Mediator\Mediator\obj\Debug\netcoreapp3.1\Mediator.AssemblyInfoInputs.cache
+C:\Users\Ivan\source\repos\Patterns\Mediator\Mediator\obj\Debug\netcoreapp3.1\Mediator.AssemblyInfo.cs
+C:\Users\Ivan\source\repos\Patterns\Mediator\Mediator\obj\Debug\netcoreapp3.1\Mediator.csproj.CoreCompileInputs.cache
+C:\Users\Ivan\source\repos\Patterns\Mediator\Mediator\obj\Debug\netcoreapp3.1\Mediator.dll
+C:\Users\Ivan\source\repos\Patterns\Mediator\Mediator\obj\Debug\netcoreapp3.1\Mediator.pdb
+C:\Users\Ivan\source\repos\Patterns\Mediator\Mediator\obj\Debug\netcoreapp3.1\Mediator.genruntimeconfig.cache
