@@ -5,27 +5,29 @@ namespace Memento
 {
     class Program
     {
-        //compare methods from mt example vs RefactoringGuru example
+        //compare methods from my example vs RefactoringGuru example
         //memento what problem solves
         static void Main(string[] args)
         {
-            TextEditor textEditor = new TextEditor(new TextWindow());
-            textEditor.Write("number 1\n");
+            TextWindow textWindow = new TextWindow();
+            TextEditor textEditor = new TextEditor(textWindow);
+
+            textWindow.AddText("number 1\n");
             textEditor.Save();
 
-            textEditor.Write("number 2\n");
+            textWindow.AddText("number 2\n");
             textEditor.Save();
 
-            textEditor.Write("number 3\n");
-            Console.WriteLine(textEditor.Print());
+            textWindow.AddText("number 3\n");
+            Console.WriteLine(textWindow.Print());
 
             textEditor.Undo();
 
-            Console.WriteLine(textEditor.Print());
+            Console.WriteLine(textWindow.Print());
 
             textEditor.Undo();
 
-            Console.WriteLine(textEditor.Print());
+            Console.WriteLine(textWindow.Print());
         }
 
         class TextEditor
@@ -39,11 +41,6 @@ namespace Memento
                 this.textWindow = textWindow;
             }
 
-            public string Print()
-            {
-                return textWindow.currentText;
-            }
-
             public void Save()
             {
                 savedTextWindows.Push(textWindow.Save());
@@ -51,12 +48,8 @@ namespace Memento
 
             public void Undo()
             {
-                textWindow.Restore(savedTextWindows.Pop());
-            }
-
-            public void Write(string text)
-            {
-                textWindow.addText(text);
+                if(savedTextWindows.Count > 0)
+                    textWindow.Restore(savedTextWindows.Pop());
             }
         }
 
@@ -74,7 +67,7 @@ namespace Memento
         {
             public string currentText;
 
-            public void addText(string text)
+            public void AddText(string text)
             {
                 currentText += text;
             }
@@ -87,6 +80,11 @@ namespace Memento
             public void Restore(TextWindowMemento memento)
             {
                 currentText = memento.Text;
+            }
+
+            public string Print()
+            {
+                return currentText;
             }
         }
     }
