@@ -43,7 +43,7 @@ namespace Memento
 
             public void Save()
             {
-                savedTextWindows.Push(textWindow.Save());
+                savedTextWindows.Push(textWindow.GetMemento());
             }
 
             public void Undo()
@@ -72,7 +72,7 @@ namespace Memento
                 currentText += text;
             }
 
-            public TextWindowMemento Save()
+            public TextWindowMemento GetMemento()
             {
                 return new TextWindowMemento(currentText);
             }
