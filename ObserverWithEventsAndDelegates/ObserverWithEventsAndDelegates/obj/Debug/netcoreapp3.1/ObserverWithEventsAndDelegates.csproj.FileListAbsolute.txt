@@ -1,0 +1,13 @@
+C:\Users\Ivan\source\repos\Patterns\ObserverWithEventsAndDelegates\ObserverWithEventsAndDelegates\bin\Debug\netcoreapp3.1\ObserverWithEventsAndDelegates.exe
+C:\Users\Ivan\source\repos\Patterns\ObserverWithEventsAndDelegates\ObserverWithEventsAndDelegates\bin\Debug\netcoreapp3.1\ObserverWithEventsAndDelegates.deps.json
+C:\Users\Ivan\source\repos\Patterns\ObserverWithEventsAndDelegates\ObserverWithEventsAndDelegates\bin\Debug\netcoreapp3.1\ObserverWithEventsAndDelegates.runtimeconfig.json
+C:\Users\Ivan\source\repos\Patterns\ObserverWithEventsAndDelegates\ObserverWithEventsAndDelegates\bin\Debug\netcoreapp3.1\ObserverWithEventsAndDelegates.runtimeconfig.dev.json
+C:\Users\Ivan\source\repos\Patterns\ObserverWithEventsAndDelegates\ObserverWithEventsAndDelegates\bin\Debug\netcoreapp3.1\ObserverWithEventsAndDelegates.dll
+C:\Users\Ivan\source\repos\Patterns\ObserverWithEventsAndDelegates\ObserverWithEventsAndDelegates\bin\Debug\netcoreapp3.1\ObserverWithEventsAndDelegates.pdb
+C:\Users\Ivan\source\repos\Patterns\ObserverWithEventsAndDelegates\ObserverWithEventsAndDelegates\obj\Debug\netcoreapp3.1\ObserverWithEventsAndDelegates.csprojAssemblyReference.cache
+C:\Users\Ivan\source\repos\Patterns\ObserverWithEventsAndDelegates\ObserverWithEventsAndDelegates\obj\Debug\netcoreapp3.1\ObserverWithEventsAndDelegates.AssemblyInfoInputs.cache
+C:\Users\Ivan\source\repos\Patterns\ObserverWithEventsAndDelegates\ObserverWithEventsAndDelegates\obj\Debug\netcoreapp3.1\ObserverWithEventsAndDelegates.AssemblyInfo.cs
+C:\Users\Ivan\source\repos\Patterns\ObserverWithEventsAndDelegates\ObserverWithEventsAndDelegates\obj\Debug\netcoreapp3.1\ObserverWithEventsAndDelegates.csproj.CoreCompileInputs.cache
+C:\Users\Ivan\source\repos\Patterns\ObserverWithEventsAndDelegates\ObserverWithEventsAndDelegates\obj\Debug\netcoreapp3.1\ObserverWithEventsAndDelegates.dll
+C:\Users\Ivan\source\repos\Patterns\ObserverWithEventsAndDelegates\ObserverWithEventsAndDelegates\obj\Debug\netcoreapp3.1\ObserverWithEventsAndDelegates.pdb
+C:\Users\Ivan\source\repos\Patterns\ObserverWithEventsAndDelegates\ObserverWithEventsAndDelegates\obj\Debug\netcoreapp3.1\ObserverWithEventsAndDelegates.genruntimeconfig.cache

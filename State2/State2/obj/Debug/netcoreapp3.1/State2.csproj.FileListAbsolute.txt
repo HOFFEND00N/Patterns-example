@@ -1,0 +1,13 @@
+C:\Users\Ivan\source\repos\Patterns\State2\State2\bin\Debug\netcoreapp3.1\State2.exe
+C:\Users\Ivan\source\repos\Patterns\State2\State2\bin\Debug\netcoreapp3.1\State2.deps.json
+C:\Users\Ivan\source\repos\Patterns\State2\State2\bin\Debug\netcoreapp3.1\State2.runtimeconfig.json
+C:\Users\Ivan\source\repos\Patterns\State2\State2\bin\Debug\netcoreapp3.1\State2.runtimeconfig.dev.json
+C:\Users\Ivan\source\repos\Patterns\State2\State2\bin\Debug\netcoreapp3.1\State2.dll
+C:\Users\Ivan\source\repos\Patterns\State2\State2\bin\Debug\netcoreapp3.1\State2.pdb
+C:\Users\Ivan\source\repos\Patterns\State2\State2\obj\Debug\netcoreapp3.1\State2.csprojAssemblyReference.cache
+C:\Users\Ivan\source\repos\Patterns\State2\State2\obj\Debug\netcoreapp3.1\State2.AssemblyInfoInputs.cache
+C:\Users\Ivan\source\repos\Patterns\State2\State2\obj\Debug\netcoreapp3.1\State2.AssemblyInfo.cs
+C:\Users\Ivan\source\repos\Patterns\State2\State2\obj\Debug\netcoreapp3.1\State2.csproj.CoreCompileInputs.cache
+C:\Users\Ivan\source\repos\Patterns\State2\State2\obj\Debug\netcoreapp3.1\State2.dll
+C:\Users\Ivan\source\repos\Patterns\State2\State2\obj\Debug\netcoreapp3.1\State2.pdb
+C:\Users\Ivan\source\repos\Patterns\State2\State2\obj\Debug\netcoreapp3.1\State2.genruntimeconfig.cache

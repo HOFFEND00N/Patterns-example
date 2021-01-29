@@ -5,8 +5,6 @@ namespace Memento
 {
     class Program
     {
-        //compare methods from my example vs RefactoringGuru example
-        //memento what problem solves
         static void Main(string[] args)
         {
             TextWindow textWindow = new TextWindow();
