@@ -14,6 +14,12 @@ namespace PrototypeFactoryAddNullObjectPattern
 
             var some = officialsFactory.Get("aa");
             Console.WriteLine(some.Steal());
+
+            NullOfficial nullOfficial = new NullOfficial();
+            Console.WriteLine(nullOfficial.Steal());
+            var nullOfficial2 = nullOfficial.Clone();
+            Console.WriteLine(nullOfficial2.GetType());
+            Console.WriteLine((nullOfficial2 as IOfficial).GetType());
         }
 
         interface IOfficial : ICloneable
@@ -111,9 +117,11 @@ namespace PrototypeFactoryAddNullObjectPattern
 
         class NullOfficial : IOfficial
         {
+            //change return / why cause exception
             public object Clone()
             {
                 return new object();
+                //return new NullOfficial();
             }
 
             public double Steal()

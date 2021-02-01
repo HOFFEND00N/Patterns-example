@@ -4,23 +4,24 @@ namespace Visitor
 {
     class Program
     {
+        //why visitor is better than just ordinary ConsoleLogger
         static void Main(string[] args)
         {
-
             Rectangle rectangle = new Rectangle(1, 2);
             Circle circle = new Circle(1, 1, 4);
             ConsoleLogVisitor consoleLogVisitor = new ConsoleLogVisitor();
 
             rectangle.AcceptVisitor(consoleLogVisitor);
+            ConsoleLogger.Log(rectangle);
 
             circle.AcceptVisitor(consoleLogVisitor);
+            ConsoleLogger.Log(circle);
         }
 
         interface IVisitor
         {
             public void Accept(Rectangle rectangle);
             public void Accept(Circle circle);
-
         }
 
         interface IShape
@@ -32,10 +33,23 @@ namespace Visitor
         {
             public void Accept(Rectangle rectangle)
             {
-                Console.WriteLine("Rectangle. Height = {0}, Width = {1}",rectangle.Height, rectangle.Width);
+                Console.WriteLine("Rectangle. Height = {0}, Width = {1}", rectangle.Height, rectangle.Width);
             }
 
             public void Accept(Circle circle)
+            {
+                Console.WriteLine("Circle. X = {0}, Y = {1}, R = {2}", circle.X, circle.Y, circle.R);
+            }
+        }
+
+        static class ConsoleLogger 
+        {
+            public static void Log(Rectangle rectangle)
+            {
+                Console.WriteLine("Rectangle. Height = {0}, Width = {1}", rectangle.Height, rectangle.Width);
+            }
+
+            public static void Log(Circle circle)
             {
                 Console.WriteLine("Circle. X = {0}, Y = {1}, R = {2}", circle.X, circle.Y, circle.R);
             }
@@ -51,6 +65,7 @@ namespace Visitor
                 Width = width;
                 Height = height;
             }
+
             public void AcceptVisitor(IVisitor visitor)
             {
                 visitor.Accept(this);

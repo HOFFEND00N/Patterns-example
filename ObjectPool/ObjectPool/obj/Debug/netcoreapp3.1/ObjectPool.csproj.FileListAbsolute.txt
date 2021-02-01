@@ -1,0 +1,13 @@
+C:\Users\Ivan\source\repos\Patterns\ObjectPool\ObjectPool\bin\Debug\netcoreapp3.1\ObjectPool.exe
+C:\Users\Ivan\source\repos\Patterns\ObjectPool\ObjectPool\bin\Debug\netcoreapp3.1\ObjectPool.deps.json
+C:\Users\Ivan\source\repos\Patterns\ObjectPool\ObjectPool\bin\Debug\netcoreapp3.1\ObjectPool.runtimeconfig.json
+C:\Users\Ivan\source\repos\Patterns\ObjectPool\ObjectPool\bin\Debug\netcoreapp3.1\ObjectPool.runtimeconfig.dev.json
+C:\Users\Ivan\source\repos\Patterns\ObjectPool\ObjectPool\bin\Debug\netcoreapp3.1\ObjectPool.dll
+C:\Users\Ivan\source\repos\Patterns\ObjectPool\ObjectPool\bin\Debug\netcoreapp3.1\ObjectPool.pdb
+C:\Users\Ivan\source\repos\Patterns\ObjectPool\ObjectPool\obj\Debug\netcoreapp3.1\ObjectPool.csprojAssemblyReference.cache
+C:\Users\Ivan\source\repos\Patterns\ObjectPool\ObjectPool\obj\Debug\netcoreapp3.1\ObjectPool.AssemblyInfoInputs.cache
+C:\Users\Ivan\source\repos\Patterns\ObjectPool\ObjectPool\obj\Debug\netcoreapp3.1\ObjectPool.AssemblyInfo.cs
+C:\Users\Ivan\source\repos\Patterns\ObjectPool\ObjectPool\obj\Debug\netcoreapp3.1\ObjectPool.csproj.CoreCompileInputs.cache
+C:\Users\Ivan\source\repos\Patterns\ObjectPool\ObjectPool\obj\Debug\netcoreapp3.1\ObjectPool.dll
+C:\Users\Ivan\source\repos\Patterns\ObjectPool\ObjectPool\obj\Debug\netcoreapp3.1\ObjectPool.pdb
+C:\Users\Ivan\source\repos\Patterns\ObjectPool\ObjectPool\obj\Debug\netcoreapp3.1\ObjectPool.genruntimeconfig.cache
