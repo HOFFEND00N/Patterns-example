@@ -8,7 +8,6 @@ namespace State2
         {
             TurnStileManager manager = new TurnStileManager();
             LockedTurnstile lockedTurnstile = new LockedTurnstile(manager);
-            UnlockedTurnstile unlockedTurnstile = new UnlockedTurnstile(manager);
 
             manager.SetTurnstileState(lockedTurnstile);
             manager.Push();

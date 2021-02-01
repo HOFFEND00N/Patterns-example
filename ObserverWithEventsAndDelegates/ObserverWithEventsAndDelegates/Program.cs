@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace ObserverWithEventsAndDelegates
 {
@@ -28,7 +27,7 @@ namespace ObserverWithEventsAndDelegates
 
         class WashingMachine
         {
-            public event EventHandler<Message> washingMachineMessage;
+            public event Action<WashingMachine, Message> washingMachineMessage;
 
             protected virtual void OnWashingMachineMessageSent(Message message)
             {
