@@ -6,8 +6,6 @@ namespace Iterator
 {
     class Program
     {
-        // move logic to MoveNext()
-        // Current() in Iterator returns Tuple, instead of expected object(Official)
         static void Main(string[] args)
         {
             var goverment = new OfficialBranch();
@@ -27,7 +25,15 @@ namespace Iterator
             Console.WriteLine(goverment.Steal());
             dm.GetOfficialChildren();
 
+            Console.WriteLine("In depth");
             goverment.UseIterator(IteratorType.InDepth);
+            foreach (var i in goverment)
+                Console.WriteLine(i);
+            
+            Console.WriteLine();
+
+            Console.WriteLine("In wide");
+            goverment.UseIterator(IteratorType.InWide);
             foreach (var i in goverment)
                 Console.WriteLine(i);
         }
@@ -39,8 +45,6 @@ namespace Iterator
 
         class Minister : IOfficial
         {
-          
-
             public double Steal()
             {
                 return 10;
@@ -49,7 +53,6 @@ namespace Iterator
 
         class DeputyMinister : IOfficial
         {
-
             public double Steal()
             {
                 return 5;
@@ -58,7 +61,6 @@ namespace Iterator
 
         class DefaultOfficial : IOfficial
         {
-            
             public double Steal()
             {
                 return 1;
@@ -69,7 +71,6 @@ namespace Iterator
         {
             private List<IOfficial> officials;
             private IEnumerator enumerator;
-           
 
             public OfficialBranch()
             {
