@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Visitor
 {
@@ -9,6 +10,16 @@ namespace Visitor
         {
             Rectangle rectangle = new Rectangle(1, 2);
             Circle circle = new Circle(1, 1, 4);
+
+            //List<IShape> shapes = new List<IShape>();
+            //shapes.Add(rectangle);
+            //shapes.Add(circle);
+            //foreach (var i in shapes)
+            //    ConsoleLogger.Log(i);
+
+            IShape shape = new Circle(1,2,3);
+            ConsoleLogger.Log(shape);
+
             ConsoleLogVisitor consoleLogVisitor = new ConsoleLogVisitor();
 
             rectangle.AcceptVisitor(consoleLogVisitor);
@@ -44,6 +55,14 @@ namespace Visitor
 
         static class ConsoleLogger 
         {
+            public static void Log(IShape shape)
+            {
+                if (shape is Circle)
+                    Log(shape as Circle);
+                else
+                    Log(shape as Rectangle);
+            }
+
             public static void Log(Rectangle rectangle)
             {
                 Console.WriteLine("Rectangle. Height = {0}, Width = {1}", rectangle.Height, rectangle.Width);
