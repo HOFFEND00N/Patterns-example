@@ -5,17 +5,10 @@ namespace Visitor
 {
     class Program
     {
-        //why visitor is better than just ordinary ConsoleLogger
         static void Main(string[] args)
         {
             Rectangle rectangle = new Rectangle(1, 2);
             Circle circle = new Circle(1, 1, 4);
-
-            //List<IShape> shapes = new List<IShape>();
-            //shapes.Add(rectangle);
-            //shapes.Add(circle);
-            //foreach (var i in shapes)
-            //    ConsoleLogger.Log(i);
 
             IShape shape = new Circle(1,2,3);
             ConsoleLogger.Log(shape);
@@ -55,6 +48,7 @@ namespace Visitor
 
         static class ConsoleLogger 
         {
+            //visitor better because avoid if statements
             public static void Log(IShape shape)
             {
                 if (shape is Circle)
